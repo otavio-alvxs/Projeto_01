@@ -15,7 +15,7 @@ def listar_cidades():
 def listar_estados():
     try:
         response = search.listar_cidades_por_estado()
-        return jsonify(response)
+        return response
     except Exception as e:
         return f"Falha na rota /listar_estados: {e}"
 
